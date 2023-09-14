@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Kalkulator Persegi</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>KATIK (KALKULATOR MATEMATIKA)</h1>
+      <h2>Welcome to KATIK</h2>
+      <div class="explanation">
+        <p>
+          Sebuah website sederhana untuk menghitung luas dan keliling persegi.
+        </p>
+      </div>
+
+      <h3>Persegi</h3>
+      <div class="gambar-dengan-background">
+        <img src="persegi.jpeg" alt="Persegi" />
+      </div>
+
+      <div class="luas">
+        <p style="text-align: left">Rumus Luas Persegi :</p>
+        <p>
+          <b>L = S x S</b>
+        </p>
+        <p style="text-align: left">
+          Dimana : <br />L = Luas <br />
+          S = Sisi
+        </p>
+
+        <p style="text-align: left">Rumus Keliling Persegi :</p>
+        <p>
+          <b>K = 4 x S</b>
+        </p>
+        <p style="text-align: left">
+          Dimana : <br />K = Keliling <br />
+          S = Sisi
+        </p>
+      </div>
+
+      <h3>Hitung Luas & Keliling Persegi</h3>
+
+      <div class="sisi-luas">
+        <form id="calculatorForm">
+          <label for="side">Panjang Sisi:</label>
+          <input type="text" id="side" required />
+          <br /><button type="submit">Hitung</button>
+          <button type="button" id="resetButton">Reset</button>
+        </form>
+        <div class="result">
+          <h4>Hasil:</h4>
+          <p>Luas: <span id="areaResult"></span></p>
+          <p>Keliling: <span id="perimeterResult"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p style="text-align: center">
+        &copy; 2023 KATIK - Kalkulator Matematika by Shakila
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
